@@ -89,7 +89,7 @@ async function login(req, res) {
 
     return res
       .status(StatusCodes.OK)
-      .json({ msg: "user login successful", token });
+      .json({ msg: "user login successful", token, username });
 
     // return res.json({ user }); // returns the user value selected by email - test
     // return res.json(user[0].password); // returns the given user password - test

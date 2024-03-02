@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+.header li {
+  list-style: none;
+}
+
+.right_contianer ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.right_contianer {
+  width: 25%;
+}
+
+/* .logo img {
+  /* width: 150px; 
+}*/
