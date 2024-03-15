@@ -5,7 +5,7 @@ const cors = require("cors");
 const userRoutes = require("./routes/userRoute");
 const questionsRoutes = require("./routes/questionRoute");
 const answersRoutes = require("./routes/answerRoute");
-const authMiddleware = require("./middleware/authmiddleware"); // Import authMiddleware
+const authMiddleware = require("./middleware/authmiddleware");
 
 // JSON middleware to extract JSON data
 app.use(express.json());

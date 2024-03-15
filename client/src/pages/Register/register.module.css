@@ -1,12 +1,67 @@
-/* .register_container {
+.register_container {
   display: flex;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 65vh;
+}
+
+.register_inner_container {
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
   width: 50%;
+}
+
+.register_form {
+  background-color: whitesmoke;
+  padding: 20px;
+  text-align: center;
+  width: 45%;
+  margin: 0 auto;
+}
+
+.register_form input {
+  width: 100%;
+  max-width: 400px;
+  height: 35px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.input_flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input_flex div {
+  flex: 1;
+  margin: 0 5px;
+}
+
+.register_form input[name="Last name"],
+.register_form input[name="First name"] {
+  width: 100%;
+  max-width: 450px;
+}
+
+/* .register_form input[name="Last name"] {
+  margin: 0 5px;
+}
+
+.register_form input[name="First name"] {
+  margin: 0 5px;
+} */
+.register_form button {
+  width: 250px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: orange;
 }
 
 .about_container {
   text-align: left;
-  word-wrap: break-word;
-  width: 350px;
-} */
+  padding: 20px;
+  width: 45%;
+  margin: 0 auto;
+}

@@ -1,12 +1,49 @@
-/* .login_container {
+.login_container {
   display: flex;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 65vh;
+}
+
+.login_inner_container {
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
   width: 50%;
+}
+
+.login_form {
+  background-color: whitesmoke;
+  padding: 20px;
+  text-align: center;
+  width: 45%;
+  margin: 0 auto;
+}
+
+.login_form input {
+  width: 100%;
+  max-width: 450px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login_form button {
+  width: 250px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: orange;
+}
+
+.login_form p span Link {
+  color: orange;
 }
 
 .about_container {
   text-align: left;
-  word-wrap: break-word;
-  width: 350px;
-} */
+  padding: 20px;
+  width: 45%;
+  margin: 0 auto;
+}

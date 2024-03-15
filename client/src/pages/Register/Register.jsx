@@ -53,48 +53,61 @@ function Register() {
 
   return (
     <section className={classes.register_container} onSubmit={handleSubmit}>
-      <div>
-        <form onSubmit={handleSubmit}>
-          <div>
-            <input ref={usernameDom} type='text' placeholder='User Name' />
-          </div>
-          <br />
-          <div>
-            <input ref={firstnameDom} type='text' placeholder='First name ' />
-          </div>
-          <br />
-          <div>
-            <input ref={lastnameDom} type='text' placeholder='Last name ' />
-          </div>
-          <br />
-          <div>
-            <input ref={emailDom} type='email' placeholder='Email address' />
-          </div>
-          <br />
-          <div>
-            <input ref={passwordDom} type='password' placeholder='Password' />
-          </div>
-          <br />
-          <button type='submit'>Agree and Join</button>
-        </form>
+      <div className={classes.register_inner_container}>
+        <div className={classes.register_form}>
+          <form onSubmit={handleSubmit}>
+            <div>
+              <input ref={usernameDom} type='text' placeholder='User Name' />
+            </div>
+            <br />
+            <div className={classes.input_flex}>
+              <div>
+                <input
+                  name='First name'
+                  ref={firstnameDom}
+                  type='text'
+                  placeholder='First name '
+                />
+              </div>
+              <div>
+                <input
+                  name='Last name'
+                  ref={lastnameDom}
+                  type='text'
+                  placeholder='Last name '
+                />
+              </div>
+            </div>
 
-        <Link to={"/login"}>Already have an account?</Link>
-      </div>
-
-      <div className={classes.about_container}>
-        <p>About</p>
-        <h1>Evangadi Networks</h1>
-        <p>
-          No matter what stage of life you are in, whether you’re just starting
-          elementary school or being promoted to CEO of a Fortune 500 company,
-          you have much to offer to those who are trying to follow in your
-          footsteps.
-        </p>
-        <p>
-          Wheather you are willing to share your knowledge or you are just
-          looking to meet mentors of your own, please start by joining the
-          network here.
-        </p>
+            <br />
+            <div>
+              <input ref={emailDom} type='email' placeholder='Email address' />
+            </div>
+            <br />
+            <div>
+              <input ref={passwordDom} type='password' placeholder='Password' />
+            </div>
+            <br />
+            <button type='submit'>Agree and Join</button>
+          </form>
+          <br />
+          <Link to={"/login"}>Already have an account?</Link>
+        </div>
+        <div className={classes.about_container}>
+          <p>About</p>
+          <h1>Evangadi Networks</h1>
+          <p>
+            No matter what stage of life you are in, whether you’re just
+            starting elementary school or being promoted to CEO of a Fortune 500
+            company, you have much to offer to those who are trying to follow in
+            your footsteps.
+          </p>
+          <p>
+            Wheather you are willing to share your knowledge or you are just
+            looking to meet mentors of your own, please start by joining the
+            network here.
+          </p>
+        </div>
       </div>
     </section>
   );

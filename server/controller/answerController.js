@@ -5,6 +5,7 @@ async function postAnswer(req, res) {
   const userid = req.user.userid; // Extract userid from authenticated user
   const questionid = req.body.questionid; // Extract questionid from the request body //* i doubt this - how the req.body get the question id
 
+  console.log(req.body);
   try {
     // Add answer to the database with userid and questionid
     await dbConnection.query(
